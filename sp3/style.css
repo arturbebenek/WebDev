@@ -1,0 +1,51 @@
+body{
+    background: lightslategray
+}
+main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    height: 150px;
+    background: sienna;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 70%;
+}
+
+nav > ul{
+display: flex;
+list-style: none;
+margin: 0;
+padding-left: 0 ;
+/* justify-content: space-between; */
+justify-content: space-around;
+
+}
+section{
+display: flex;
+/* flex-direction: column-reverse */
+}
+aside{
+    width: 200px;
+    background: lightskyblue;
+    height: 700px;
+}
+article{
+    width: 800px;
+    height: 700px;
+    background: lightcoral
+}
+#right{
+width: 200px;
+height: 700px;
+background: lightgreen;
+}
+footer{
+    height: 150px;
+    background: lightseagreen;
+}
