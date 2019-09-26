@@ -1,0 +1,99 @@
+body{
+    background: lightcyan;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background: dimgray;
+    display: grid;
+    grid-template-rows: 60px 140px 500px 200px 200px 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "gheader gheader gheader gheader gheader gheader"
+        "gupper gupper gupper gupper gupper gupper"
+        "gaside gaside garticle garticle gright gright"    
+        "gmid gmid gmid gmid gmid gmid"
+        "gbottom1 gbottom1 gbottom1 gbottom2 gbottom2 gbottom2" 
+        "gfooter gfooter gfooter gfooter gfooter gfooter"
+}
+
+header {
+    background: lightblue;
+    grid-area: gheader;
+}
+#upper{
+    background: chartreuse;
+    grid-area: gupper;
+}
+aside {
+    background: lightcoral;
+    grid-area: gaside;
+}
+
+article{
+    background: lightslategray;
+    grid-area: garticle;
+}
+#right{
+    background: lightgoldenrodyellow;
+    grid-area: gright;
+}
+
+#mid{
+background: lightgreen;
+grid-area: gmid;
+}
+
+#bottom1{
+background: lightgray;
+grid-area: gbottom1;
+}
+
+#bottom2{
+    background: lightpink;
+    grid-area: gbottom2;
+}
+
+footer{
+background: lightgreen;
+grid-area: gfooter;
+}
+
+@media (max-width: 800px)
+{
+    main {
+        width: 100%;
+        grid-template-rows: 60px 140px 300px 300px 120px 120px 80px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "gheader gheader"
+            "gupper gupper "
+            "gaside  garticle"
+            "gright gright"    
+            "gmid gmid"
+            "gbottom1 gbottom1 "
+            "gbottom2 gbottom2" 
+            "gfooter gfooter"
+    }
+}
+
+
+@media (max-width: 500px)
+{
+    main {
+        width: 100%;
+        grid-template-rows: 60px 140px 200px 200px 200px 120px 120px 80px;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            "gheader"
+            "gupper"
+            "garticle"
+            "gaside"
+            "gmid"
+            "gright"    
+            "gbottom1"
+            "gbottom2" 
+            "gfooter"
+    }
+}
