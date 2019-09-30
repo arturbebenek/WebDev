@@ -1,0 +1,46 @@
+body{
+    background: grey;
+}
+
+.pasek {
+width: 100px;
+height: 10px;
+border: 5px solid #fff;
+margin: 10px;
+background: lightgrey
+}
+
+.pasek1{
+    transition: all 0.2s ease-in-out;
+}
+.pasek1:hover{
+    background: red;
+}
+.pasek2 div{
+    transition: all 0.2s ease-in-out;
+    background: red;
+    height: 10px;
+    width: 0;  
+}
+.pasek2:hover div{
+    width: 100%;
+}
+
+.pasek3{
+position: relative;
+}
+
+.pasek3::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.pasek3:hover::after
+{
+    width: 100%;
+}

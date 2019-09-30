@@ -1,0 +1,65 @@
+body {
+    background: lightgray;
+}
+
+main{
+    margin: 50px auto 0 auto;
+    width: 1200px;
+    height: 1800px;
+    background: linear-gradient(to right, #f7ff00, #db36a4); 
+    position: relative;
+}
+
+.kw {
+    width: 200px;
+    height: 200px;
+    /* position: relative; */
+    position: absolute;
+}
+#k1 {
+    background: lightseagreen;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    /* transition: all 0.5s ease-in-out; */
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#k1:hover {
+background: red;
+width: 100px;
+height: 100px;
+}
+
+#k2 {
+    background: lightskyblue;
+    /* left: 1000px; */
+    left: 50px;
+    top: 50px;
+    z-index: 20;
+}
+
+#k3 {
+    background: lime;
+    left: 100px;
+    top: 100px;
+    z-index: 40;
+}
+
+#k4 {
+    background:lightsalmon;
+    left: 150px;
+    top: 150px;
+    z-index: 30;
+}
+
+#cookies {
+    left: 0;
+    width: 100px;
+    height: 200px;
+    background: rgba(0,0,0,0.5);
+    top: calc(50% - 50px);
+    /* element nie bedzie sie przewijal ze strona */
+    /* position: fixed; */
+    position: sticky;
+}
